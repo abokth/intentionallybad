@@ -2,4 +2,6 @@ FROM centos:7
 
 MAINTAINER abokth
 
-LABEL Remarks="this is bad"
+RUN yum -y update && yum clean all
+
+LABEL Remarks="this is less bad"
